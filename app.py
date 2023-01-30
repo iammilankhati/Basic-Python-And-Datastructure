@@ -15,3 +15,22 @@ while user_input != 5:
     user_input = input('Please enter n to exit ?')
 
 
+# list
+
+fruits  =['apple','ball','orange','cat']
+
+bikes = ('orange','ball','cat')
+
+position = {'jr','mid','sr'}
+
+student_info = {
+    "name":"Ram",
+    "age":16,
+    "family":{
+        "father":"hari",
+        "age":80
+    }
+}
+
+# access, del, change
+
