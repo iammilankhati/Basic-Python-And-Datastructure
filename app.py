@@ -1,256 +1,109 @@
-
-# name = "namessssssss"
-# """
-# # syntax
-# comments
-# variables
-# data types
-# numbers
-# Casting
-# strings
-# boolean
+""" 
 
 
+syntax
+comments
+variables
+data types (basic, advanced)
+casting(str, int)
+operator
 
-# if else
-# for
-# while
+advanced data types(list,tuple,set dictionary)
+loops: while, for loop
+if else
 
 
-# advanced types
+
+"""
 
 
 # functions
-# class inheritance
 
-# """
 
+def add_number(first_number, second_number):
+    result = first_number + second_number
+    return result
+    
 
-# thislist = ["apple",'banana','cheery',"cherry"]
 
-# #general
-# print(thislist)
-# print(thislist[3])
+print(add_number(5,3))
 
-# print(len(thislist))
 
-# list2 = [1,2,4,5,65,6]
-# list3 = [True, False, False, False, False, False]
 
 
-# random_list  =["apple", 1, False]
 
+def show_name(name):
 
-# print(type(random_list))
 
 
-# list3 = list(("apple","ball",'cat'))
-# print(type(list3))
 
-# # list Accessing
+    print(f'My name is {name}')
 
-# print(thislist[1])
-# print(thislist[-1])
 
-# thislist2 = ['apple','banana','cherry','oranage','kiwi','mango']
-# print(thislist2[2:])
-# print(thislist2[-3:])
-# print(thislist2[:3])
+show_name('Aryan')
+show_name('prabin')
 
-# # check in list
-# if "grape" in thislist2:
-#     print(f'yes kiwi exist in the list')
 
+#args || parameters
 
-# # changing the list 
-# thislist3 = ['apple','banana','cherry','oranage']
-# thislist3[2] = "cabbage"
+#numbers of parameters
+#*args (arbitary args)
+def sum_num(*args):
+    print(args[2:4])
+    
 
-# print(thislist3)
+sum_num(1,2,5,4,2)
 
-# thislist3[1:3] = ["mango",'banana','cherry','oranage']
-# print(thislist3)
+#keyword arguments
+def show_info(a,b,c):
 
 
-# # Adding the items (append,insert,extend)
-# thislist4 = ['apple','banana','cherry','oranage']
-# # thislist4.append(["mango",'banana','cherry','oranage'])
-# print(thislist4)
+    print(f'the smallest number is : {a}')
 
-# thislist4.insert(1,'rice')
-# print(thislist4)
 
-# thislist4.extend(thislist2)
-# print(thislist4)
+# show_info(a=6,b=5,c=9,d=5)
 
-# #remove the items(remove, pop,del,clear)
-# thislist5 = ['apple','banana','cherry','oranage','oranage']
-# thislist5.remove('banana')
-# print(thislist5)
 
-# thislist5.pop()
-# print(thislist5)
+def show_all(**nums):
+    print(f'His First name is :{nums["lname"]}')
 
-# del thislist5[0]
-# print(thislist5)
-# thislist5.clear()
+show_all(fname="Aryan", lname="Ghimire")
 
-# print(thislist5)
+#how to make funtions
+#parameter ::   
+   #*args
+   #**keyargs
+   #default:
 
 
-# #looping in list
-# thislist6 = ['apple','banana','cherry','oranage']
 
-# #for loop
-# # for item in thislist6:
-# #     print(item)
+def print_country(country="england"):
+    print(f'I am from :{country}')
 
-# #list comprehension
-# # [print(x) for x in thislist6]
+print_country("Nepal")
 
-# #using range
 
-# # for i in range(0,len(thislist6)):
-# #     print(thislist6[i])
+def function_food(food):
+    #logic
 
+    for x in food:
+        print(x)
+    
+food = ['rice','orange','curry']
 
-# # i = 0
-# # while i < len(thislist6):
-# #     print(thislist6[i])
-# #     i += 1
+function_food(food)
 
-# # user_input = int(input('Please enter your age'))
 
-# # if user_input >= 18:
-# #     print(f'You can cast vote')
-# # elif user_input >= 13:
-# #     print(f'your age: {user_input} is under 18')
-# # else:
-# #     print('testing')
 
+def find_value(x):
+    return x * 10
 
+print(find_value(5))
 
-# #sort(reverse=True)
 
-# thislist7 = [1,3,5,6,3,6,5]
-# thislist7.sort(reverse=True)
-# # thislist7.revers()
-# print(thislist7)
 
-# #join
-# list5 = thislist7 + thislist2
-
-# print(list5)
-
-# #copy
-
-
-#tuple
-
-
-thistuple1 = ('apple',1,'cat','dog','elephant')
-# del thistuple1[0]
-
-# print(thistuple1)
-# print(type(thistuple1[0]))
-
-# thistuple1[0] = "shyam"
-
-# #item assignment not posssible
-# list_from_tuple = list(thistuple1)
-
-
-phones = ('apple','motorolla','samsung','cabbage')
-
-(fruit, *phone, veg) = phones
-
-# print(phone)
-
-# set
-
-set1 = {'ram','shyam','hari','shyam'}
-# print(set1)
-
-
-# set1[1] = 'hari'
-# for x in set1:
-    # print(x)
-
-
-#add = append
-#update = extend
-#remove('banana'),pop(),clear() del
-
-# set1.discard('shyam')
-
-# print(set1)
-
-
-# A = {1,3,5,6}
-# B = {5,3,1,0,6}
-
-#update, union
-
-
-
-person = {
-    "name": "John",
-    "age": 18,
-    "roll":34,
-    "movies":['ab','sdf','dsf','sdf'],
-    "family":{
-        "father":'ramlal'
-    }
-}
-
-# print(person['movies'][0])
-
-# for x in person['movies']:
-#     print(x)
-
-
-for x,y in person.items():
-    if x == "movies":
-        for item in y:
-            print(item)
-
-
-person['more'] = {'apple':'ball'}
-print(person)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#function (def,fn_name, return)
+#args: 3 (*args, **kwargs, default)
 
 
 
