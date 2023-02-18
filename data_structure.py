@@ -92,3 +92,29 @@ for values in student_info.values():
 
 for key, values in student_info.items():
     print(key, values)
+
+""" calulator """
+
+
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def multiply(x, y):
+    return x * y
+
+
+def divide(x, y):
+    return x / y
+
+
+operations = {'+': add, '-': subtract, '*': multiply, '/': divide}
+user_input = input('Enter the numbers and operator ? ')  # input as + 5 4
+operator, operand1, operand2 = user_input.split()
+
+result = operations[operator](int(operand1), int(operand2))
+print(result)  # 9

@@ -30,13 +30,38 @@
 
 2. Tuple - _ordered, unchangeable, Allows duplicates_
    >tuple accessing
-   ~~list modifying~~ 
-   ~~list deletion~~
-   ~~tuple sorting~~
-    *change types to update: like taking to list*   
+
+    *casting types to list for update*   
 
 3. Set -_unordered, unchangeable, unindexed, No duplicate_
    >most common use is remove the duplcates by casting
 
 4. Dictionary - _ordered, changeable, No duplicate_
    >accessing
+   >looping
+#### Creating a calculator
+```
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def multiply(x, y):
+    return x * y
+
+
+def divide(x, y):
+    return x / y
+
+
+operations = {'+': add, '-': subtract, '*': multiply, '/': divide}
+user_input = input('Enter the numbers and operator ? ')  # input as + 5 4
+operator, operand1, operand2 = user_input.split()
+
+result = operations[operator](int(operand1), int(operand2))
+print(result)  # 9
+
+```
