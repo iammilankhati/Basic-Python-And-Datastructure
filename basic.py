@@ -60,3 +60,22 @@ y = 20
 
 if (x & y):  # |, ^, ~, << >>
     pass
+""" Looping and Branching """
+
+age = 24
+# ifelse
+if (age >= 24):
+    print('You can cast a vote.')
+else:
+    print('You can\'t cast a vote')
+
+# for
+for i in range(len(username)):
+    print(username[i])
+    
+#while 
+count = 5
+while(count>0 ):
+    print(count)
+    count-+1
+    
