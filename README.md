@@ -1,14 +1,22 @@
-# Hello
 
-# Hi
+## Python and Datastructures
 
-# Change from server
 
-# new Branch created
+## Basic
 
-# change in new branch
+1. string
+2. number
+3. boolean
+4. casting
 
-# new feature is added
 
-# change done in development branch
-# other people chanage in the development
+## String Manipulation
+1. indexing, slicing, modifying and commonly used methods
+
+
+## Data Structures
+
+1. List
+2. Tuple
+3. Set
+4. Dictionary
